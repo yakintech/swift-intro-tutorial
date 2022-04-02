@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>
+//Çağatay isimli STRING  değeri name adında bir değişkene ATADIM
+//  var name : String 
+//  
+//  name = "Çağatay"
+//  
+//  var surname = "Yildiz"
+
+//Integer =&gt; artı veya eksi tamsayılara verilen ad
+
+var year = 9999999
+var price = 50.495811
+var stock = 3.7
+
+let city = "İzmir"
+
+//Boolean
+var onlineStatus = false
+onlineStatus = true
+
+    //Operatörler
+    // * + / -
+    //Ondalıklı bir değerle bir tam sayıyı çarpamıyorum!!
+//  var unitPrice : Double = 100
+var unitPrice = 100.0
+
+var kdvPrice = unitPrice * 1.18
+
+print(kdvPrice)
+
+
+    //Toplama operatörü hem metinsel hem de numeric tipler için kullanılabilir. 
+var x : Double = 5
+var y : Double = 10
+
+//  var z = x + y
+var z = x / y
+
+print(z)
+
+
+//  var sayi = 10
+//  sayi = sayi + 5
+//  print(sayi)
+
+//  var sayi = 3
+//  sayi += 1
+//sayi = sayi + 1
+//  print(sayi)
+
+//  let sayi = 13
+//  var sonuc = sayi % 3
+//  print("Sonuç: ", sonuc)
+
+var status = 5 &gt; 33
+
+print("Status ", status)
+
+
+    //1) var keywordu ile 3 tane string tanımla
+    //2) let keywordu ile 3 tane int tanımla
+    //3) iki adet double sayı tanımla ve bu sayıların çarpımını print et
+    //4) üç adet double sayı tanımla bu sayıların ortalamasını print et
+    
+
+let sayi1 : Double = 20
+let sayi2: Double = 32
+let sayi3: Double = 40
+
+let ortalama = (sayi1 + sayi2 + sayi3) / 3
+print("Ortalama: ", ortalama)
+
+//5) 2 adet string tanımla ( name ve surname) ekrana bu stringlerin birleşimini print et (aralarında bir boşluk kalsun )
+
+let name = "Eren"
+let surname = "Yürekli"
+
+let fullname = name + " " + surname
+
+print(name + " " + surname)
+print(fullname)
+
+    
+
+
+
+
+
+
+
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 1588}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

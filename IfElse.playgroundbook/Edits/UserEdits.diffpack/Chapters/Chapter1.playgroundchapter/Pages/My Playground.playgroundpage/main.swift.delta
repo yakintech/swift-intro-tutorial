@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>let onlineStatus = true
+
+
+if onlineStatus == true {
+    print("User Online!!")
+}
+
+
+//Bir ürünün fiyatı 100 den yüksek ise PAHALI değilse UCUZ yaz
+
+var price = 120.0
+
+if price &gt; 100 {
+    print("PAHALI")
+} else{
+    print("UCUZ")
+}
+
+//Bir ürün fiyatı 100 den büyükse KDV yi %18 den hesaplayıp ürünün KDV li fiyatını print et DEĞİLSE KDV yi %8 den hesaplayıp ürünün KDV li fiyatını print et
+
+let productPrice = 120.0
+var kdvPrice : Double
+
+if productPrice &gt; 100{
+    kdvPrice = productPrice * 1.18
+}else{
+    kdvPrice = productPrice * 1.08
+}
+print(kdvPrice)
+
+    //Kullanıcı adı cagatay ve şifre 123 ise giriş başarılı DEĞİLSE hatalı giriş yazsın
+
+let userName = "cagatay"
+let password = "123"
+
+
+if (userName == "cagatay" &amp;&amp; password == "123"){
+    print("BAŞARILI")
+} else{
+    print("HATALI KULLANICI ADI VEYA ŞİFRE")
+}
+
+
+//Hava sıcaklığı 0-10 arasında ise SOĞUK 10-20 arasında ise çiçek 20-30 arasında ise SICAK. Bu değerlerin dışında ise İKLİM KRİZİ
+
+let sicaklik = 15
+
+if (sicaklik &gt; 0 &amp;&amp; sicaklik &lt;= 10){
+    print("SOĞUK...")
+} 
+else if (sicaklik &gt; 10 &amp;&amp; sicaklik &lt; 20){
+    print("ÇİÇEK...")
+}
+else if( sicaklik &gt;= 20 &amp;&amp; sicaklik &lt; 30){
+    print("Sıcak")
+}
+else{
+    print("KRİZ!")
+}
+
+    
+
+
+//Öğrenci notu gir. 0-45 "KALDI" 45-55 "GEÇTİ-İKİ", 55-70 "ORTA ŞEKER", 70-85 "GEÇTİ - İYİ", 85-100 (BAŞARILI YAZSIN) NOT bu aralıklarda değilse "Düzgün not giriniz..."
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 1368}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{0, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
