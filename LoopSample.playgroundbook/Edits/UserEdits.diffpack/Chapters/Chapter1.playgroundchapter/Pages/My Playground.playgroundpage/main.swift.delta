@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// 1) 20 den 100 e kadar olan sayıları ekrana yazdır
+
+for index in 20...100 {
+    //print("Soru 1: ", index)
+}
+
+// 2) 50 ile 150 arasındaki sayıların toplamını bana ver
+
+var toplam = 0
+for index in 50...150 {
+    toplam = toplam + index
+}
+print("Soru 2: ", toplam)
+
+// 3) 30 ile 100 arasında KAÇ ADET 3 e bölünebilen sayı var.
+var sayac : Int = 0
+for index in 30...100 {
+    
+    if index % 3 == 0 {
+        sayac += 1
+    }
+    
+}
+
+print("Soru 3: ", sayac)
+
+// 4) 30 ile 100 arasında hem 3 e hem de 4 e bölünebilen sayıların TOPLAMI nedir?
+var toplam2 = 0
+for index in 30...100 {
+    
+    if (index % 3 == 0 &amp;&amp; index % 4 == 0) {
+        toplam2 = toplam2 + index
+    }
+    
+}
+
+print("Soru 4: ", toplam2)
+
+
+// 5) 50 ile 100 arasında 2 ye veya 3 e bölünebilen sayıların ortalaması nedir? Sayıların toplamını sayı adedine böldüğümde çıkan sonuç ORTALAMADIR.
+
+var toplam3 = 0
+var sayac2 = 0
+for index in 50...100 {
+    
+    if (index % 2 == 0 || index % 3 == 0){
+        toplam3 = toplam3 + index
+        sayac2 += 1
+    }
+    
+}
+
+var result = toplam3 / sayac2
+print("Soru 5: ", result)
+
+
+// 6) Aşağıdaki dizide kaç eleman var?
+
+var metalBands = ["Iron Maiden", "Gojira", "Slipknot", "Rotting Christ", "Moonspeel", "Rammstein", "Parkway Drive"]
+
+var sayac3 = 0
+for metal in metalBands {
+    sayac3 += 1
+}
+
+print("Soru 6 ", sayac3)
+
+// 7) Yukarıda bulunan dizinin elemanlarını ters çevir başka bir diziye at
+    // *** Yeni dizi olmadan bu soruyu çöz!
+
+var newMetalBands : [String] = []
+for index in stride(from: sayac3 - 1, to: -1, by: -1){
+    
+    let group = metalBands[index]
+    newMetalBands.append(group)
+}
+
+
+//
+
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 1619}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

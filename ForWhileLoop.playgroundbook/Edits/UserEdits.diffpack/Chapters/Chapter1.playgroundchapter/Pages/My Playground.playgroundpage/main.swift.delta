@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>//Döngüler
+// Bir kod bloğunun belirlenen koşullarda tekrar tekrar çalışması
+
+
+let nameArray = ["Çağatay", "Alp", "Zeliha", "Mehmet"]
+
+//Dizideki elemanları tek tek ekrana print et
+//  print(nameArray[0])
+//  print(nameArray[1])
+//  print(nameArray[2])
+//  print(nameArray[3])
+
+for name in nameArray{
+    //print(name)
+}
+
+
+
+for index in 1...10{
+    //print(index)
+}
+
+//1) 30 a kadar olan sayıların toplamını bana ver (1 + 2 + 3 +....)
+
+var toplam = 0
+
+for index in 1...30{
+    toplam = toplam + index
+}
+
+print(toplam);
+
+//2) 1 den 100 e kadar olan TEK sayıların toplamı nedir?
+
+var tekSayiToplam = 0
+for index in 1...100{
+    if(index % 2 == 1){
+        tekSayiToplam = tekSayiToplam + index
+    }
+}
+print(tekSayiToplam)
+
+//3) 1 den 100 e kadar olan, 3 e bölünebilen KAÇ ADET SAYI VAR
+
+var sayac = 0
+for index in 1...100{
+    
+    if(index % 3 == 0){
+        sayac = sayac + 1
+    }
+    
+}
+
+print("Sayaç: ", sayac)
+
+// 4)  70 e kadar olan sayıların KARELERİNİN toplamı nedir?
+
+var kareToplam = 0
+
+for index in 1...70{
+    kareToplam = kareToplam + (index * index)
+}
+
+print("Kareleri toplamı: ", kareToplam)
+
+    // 5) 1 den 100 e kadar olan 2 VEYA 3 e bölünebilen kaç adet sayı var? ( veya bağlacı || ) 
+
+var sayac2 = 0
+
+for index in 1...100{
+    
+    if(index % 2 == 0 || index % 3 == 0){
+        sayac2 += 1
+        //sayac = sayac + 1
+    }
+    
+}
+
+print("Sayaç2: ", sayac2)
+
+
+// 6) Aşağıdaki dizinin elemanları toplamını ekrana yazdır.
+
+let numberArray : [Int] = [2, 66, 2, -2, 11, 3, 12, 733]
+
+var arrayTotal = 0;
+for number in numberArray {
+    arrayTotal = arrayTotal + number
+}
+
+print(arrayTotal)
+
+// 7) Yukarıdaki dizide bulunan en küçük sayıyı ekrana yazdır
+var minItem = numberArray[0]
+for number in numberArray {
+    
+    if minItem &gt; number {
+        minItem = number
+    }
+    
+}
+
+print("Minimum value: ", minItem)
+
+
+// 8) Yukarıdaki dizide bulunan POZİTİF tam sayıların ORTALAMASI nedir?
+
+//Pozitif sayıları bul. Bunların toplamını hesapla. Ve bu toplamı adede böl
+
+var total2 = 0
+var sayac3 = 0
+for number in numberArray {
+    
+    if number &gt; 0 {
+        // Pozitifi tam sayıların toplamını buldum.
+        total2 = total2 + number
+        // Kaç adet pozitif tam sayı olduğunu buldum.
+        sayac3 += 1
+    }
+    
+}
+
+let result = total2 / sayac3
+print("Pozitif ortalama: ", result)
+
+
+
+// Döngü 1 den 10 a kadar dönüyor.
+for _ in 1...10{
+    print("Çağatay");
+}
+
+
+//  for tick in stride(from:2, through: 100, by:2){
+//      //print(tick)
+//  }
+
+//  for index in 1...100 where index != 50 {
+//      print(index)
+//  }
+//  
+
+//while loop
+
+var index = 0
+
+while index &lt; 10 {
+    index += 1
+    print("Merhaba Swift! ")
+}
+
+
+
+
+
+
+
+
+
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 2647}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

@@ -66,13 +66,12 @@ else{
     print("KRİZ!")
 }
 
-    
-
 
 //Öğrenci notu gir. 0-45 "KALDI" 45-55 "GEÇTİ-İKİ", 55-70 "ORTA ŞEKER", 70-85 "GEÇTİ - İYİ", 85-100 (BAŞARILI YAZSIN) NOT bu aralıklarda değilse "Düzgün not giriniz..."
+
 </string>
 			<key>ModifiedRange</key>
-			<string>{0, 1368}</string>
+			<string>{0, 1363}</string>
 			<key>OriginalContent</key>
 			<string></string>
 			<key>OriginalRange</key>

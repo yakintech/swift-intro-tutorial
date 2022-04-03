@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>//Dışarıdan aldığı sayıya göre bana günü veren switch case yapısı. Örneğin 1 ise pazartesi 2 ise salı vb.
+
+let day = 2
+
+switch day {
+case 1:
+    print("Pazartesi")
+case 2:
+    print("Salı")
+case 3:
+    print("Çarşamba")
+case 4:
+    print("Perşembe")
+case 5:
+    print("Cuma")
+case 6:
+    print("Cumartesi")
+case 7:
+    print("Pazar")
+default : 
+    print("Böyle bir gün yok")
+}
+
+
+let mevsim = "Yaz"
+
+switch mevsim {
+case "Kış":
+    print("Aralık, Ocak, Şubat")
+case "İlkbahar":
+    print("Mart, Nisan, Mayıs")
+case "Yaz":
+    print("Haziran, Temmuz, Ağustos")
+case "Sonbahar":
+    print("Eylül,Ekim,Kasım")
+default:
+print("Böyle bir mevsim yok")
+}
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 648}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
