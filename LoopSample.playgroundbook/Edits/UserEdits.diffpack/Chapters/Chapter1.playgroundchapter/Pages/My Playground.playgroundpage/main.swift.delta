@@ -84,13 +84,31 @@ for index in stride(from: sayac3 - 1, to: -1, by: -1){
 }
 
 
-//
+//Derste Yapılanlar
+
+// 1) Bir ülke dizisi oluştur. Ülkeleri ekrana print et
+// 2) Ülke dizisinde kaç ülke var ekrana yazdır
+// 3) Bir sayı dizisi oluştur. Sadece negatif sayıları ekrana yaz.
+// 4) Oluşturduğun sayı dizisinde negatif KAÇ ADET sayı var?
+// 5) Oluşturduğun sayı dizisindeki negatif sayıların toplamı nedir?
+// 6) Bir decimal dizi oluştur. Dizinin elemanlarının KDV li hallerinin TOPLAMLARINI ekrana yaz
+// 8) **** 1 den 100 e kadar kaç adet asal sayı var? ***
+// 9) 100 ile 200 arasında olan 7 ye bölünebilen kaç adet sayı var?
+// 10) 100 ile 200 arasında 4 e bölünebilen sayıların ortalaması nedir?
+
+//ÖDEVLER
+
+//1) 10 elemanlı bir sayı dizisi oluştur. Dizinin en küçük elemanını ekrana yazdır
+//2) Yukarıda oluşturduğun dizinin en küçük elemanını ve index numarasını ekrana yazdır
+//3) 
+
+
 
 
 
 </string>
 			<key>ModifiedRange</key>
-			<string>{1, 1619}</string>
+			<string>{1, 2422}</string>
 			<key>OriginalContent</key>
 			<string></string>
 			<key>OriginalRange</key>
