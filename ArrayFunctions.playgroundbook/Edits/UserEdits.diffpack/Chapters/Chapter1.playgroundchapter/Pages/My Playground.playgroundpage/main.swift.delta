@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>var names : [String] = ["Çağatay", "Ece", "Mert", "Aykut", "Aslı", "Can", "Berkay","Ece" ]
+
+//Dizide kaç eleman var?
+//Bir dizide kaç eleman olduğunu dizinin count isimli propertyisi verir
+
+var namesLength = names.count
+
+//f(x,y) = 2x + 1 + 3y
+//f(3,5)
+
+//Diziye Melike adında yeni bir eleman ekle
+names.append("Melike")
+
+//Steve isimli elemanı dizinin 2. elemanı OLARAK EKLE
+names.insert("Steve", at: 2)
+
+//Dizide Ece ismindeki ilk elemanı ver!
+var firstIndexNo = names.firstIndex(of: "Ece")
+
+
+//Dizide Ece ismindeki som elemanı ver!
+var lastIndexNo = names.lastIndex(of: "Ece")
+
+//Dizinin 2. indexinde bulunan elemanı kaldır :(
+names.remove(at: 2)
+
+
+//Dizideki TÜM ELEMANLARI TEMİZLE
+//names.removeAll()
+//names = []
+
+//Dizinin elemanlarını ters çevir
+//Dizinin mevcut elemanlarını ters çevirir. Orjinal dizi değişir!
+names.reverse()
+
+//Bu dizide Berkay adında biri var mı? String işlemlerde küçüj büyük harf duyarlıdır!!
+var varMi = names.contains("Berkay")
+
+
+//Diziden rastgele bir elemanı bana ver
+let randomName = names.randomElement()
+//print(randomName)
+
+//Can isimli elemanı diziden çıkar. Önce Can hangi indexte onu bulalım. Sonra remove edelim
+let removeIndexNo = names.firstIndex(of: "Berkay")
+
+//?? sembolü eğer remopveIndexNo nil gelirse 0 değerini ata demek. Gelmezse MEVCUT değeri atıyor.
+let newRemoveIndex = removeIndexNo ?? 0
+names.remove(at: newRemoveIndex)
+
+//Dizinin son elemanını getir
+let lastElement = names.last
+
+//Dizinin ilk elemanını getir
+let firstElement = names.first
+//names[0]
+
+
+
+
+    //https://www.programiz.com/swift-programming/arrays
+    //https://developer.apple.com/documentation/swift/array
+//https://www.codingexplorer.com/arrays-swift/
+
+
+
+
+
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 1686}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

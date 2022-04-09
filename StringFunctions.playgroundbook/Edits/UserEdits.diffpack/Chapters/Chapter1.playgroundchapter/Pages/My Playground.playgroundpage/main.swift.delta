@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>//Swift String Functions
+
+
+let name = "Çağatay Yıldız"
+
+//Yukarıdaki string elemanın kaç KARAKTER olduğunu söylüyor
+let nameCount : Int = name.count
+
+//Yukarıdaki name isimli değerin harflarini TAMAMEN BÜYÜT
+let nameUpper : String = name.uppercased()
+
+//Yukarıdaki name isimli değerin harflerini TAMAMEN KÜÇÜLT
+let nameLower : String = name.lowercased()
+
+//İçeride o karakter var mı?
+let varMi : Bool = name.contains("e")
+
+var charSample : Character = "a"
+
+//Metindeki r karakteri kaçıncı indexte bulunuyor?
+let indexNo  = name.firstIndex(of: "a")
+
+
+
+//telefon: +905437331470
+//Yukarıki telefondan +90 hariç diğerlerini bana ver. 5437331470
+let phone : String = "+905437331470"
+let phoneStartIndex = phone.firstIndex(of: "5")
+
+
+print(phone[phoneStartIndex!...])
+
+
+let newIndex = phone.index(phoneStartIndex!, offsetBy: 8)
+
+//Ekrana 70 çıktısı verecek
+print(phone[newIndex...])
+
+//https://stackoverflow.com/questions/39677330/how-does-string-substring-work-in-swift
+
+
+
+let hello = "Hello Swift!"
+
+let startIndex  = hello.startIndex
+let index = hello.index(startIndex, offsetBy: 5)
+
+//1. yol
+//let result = hello[..&lt;index]
+
+//2. yol
+//let result = hello.prefix(upTo: index)
+
+//3. yol
+//let result = hello.prefix(5)
+
+let helloIndexNo = hello.index(hello.endIndex, offsetBy: -6)
+let result = hello.suffix(from: helloIndexNo)
+
+
+let university = "Bahçeşehir Üniversitesi"
+
+let startUniIndex = university.firstIndex(of: "Ü")
+let endUniIndex = university.lastIndex(of: "s")
+
+let range = startUniIndex!..&lt;endUniIndex!
+
+let uniResult = university[range]
+
+
+
+
+//aşağıdaki metnin sadece birinci harfini büyült
+var metalBand = "razor offical"
+
+//   "R" + "azor offical"
+//Birinci harfi YAKALA ve büyült
+
+let startIndexNo = metalBand.startIndex
+let endIndexNo = metalBand.endIndex
+let metalBandFirstChar = metalBand[startIndexNo].uppercased()
+
+let secondIndexNo = metalBand.index(startIndexNo, offsetBy: 1)
+let result2 = metalBandFirstChar + metalBand[secondIndexNo..&lt;endIndexNo]
+
+
+//Bruce dickinson  =&gt; Bruce Dickinson
+//Steve harris  =&gt; Steve Harris
+
+let soloistName = "Bruce dickinson"
+
+//Öncelikle boşluk karakterinin index numarasını buluyoruz.
+let spaceIndex = soloistName.firstIndex(of: " ")!
+
+//İkinci kelimenin İLK harfinin index numarasını buldum!
+let secondNameIndex = soloistName.index(spaceIndex, offsetBy: 1)
+let secondNameIndex2 = soloistName.index(spaceIndex, offsetBy: 2)
+
+//İkinci kelimenin ilk harfini büyüttüm.
+let secondNameFirstChar = soloistName[secondNameIndex].uppercased()
+
+var soloistResult = soloistName[soloistName.startIndex..&lt;secondNameIndex] + secondNameFirstChar 
+
+soloistResult = soloistResult + soloistName[secondNameIndex2..&lt;soloistName.endIndex]
+
+print("Name: ", soloistResult)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 2733}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{0, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
